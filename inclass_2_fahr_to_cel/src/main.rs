@@ -19,10 +19,8 @@ fn fahr_to_cel(fahr: f32) -> f32 {
 }
 
 fn parse_string(input: &str) -> f32 {
-    let num = input
-        .trim()
+    input.trim()
         .parse::<f32>()
-        .expect("User input is not a number");
-    return num
+        .expect("User input is not a number")
 }
 
